@@ -98,19 +98,14 @@ namespace AssertProperties
             }
 
             var sb = new StringBuilder();
+            sb.AppendLine();
+
             foreach (var error in _errors)
             {
                 sb.AppendLine(error);
             }
-            throw new AssertExpcetion(sb.ToString());
-        }
 
-        public class AssertExpcetion : Exception
-        {
-            public AssertExpcetion(string message)
-                : base(message)
-            {
-            }
+            throw new AssertExpcetion(sb.ToString());
         }
     }
 }
