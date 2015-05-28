@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AssertProperties")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Assert multiples properties when comparing an object and get the right feedback :-)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AssertProperties")]

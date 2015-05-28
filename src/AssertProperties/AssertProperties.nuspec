@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>lfreneda</authors>
+    <owners>lfreneda</owners>
+    <projectUrl>https://github.com/lfreneda/AssertProperties</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>First release \o\</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>assert multiple unit testing test</tags>
+  </metadata>
+</package>
