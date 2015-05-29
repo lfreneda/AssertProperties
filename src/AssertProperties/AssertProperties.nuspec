@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/lfreneda/AssertProperties</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>First release \o\</releaseNotes>
+    <releaseNotes>Adding ShouldNotBeNull</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>assert multiple unit testing test</tags>
   </metadata>
