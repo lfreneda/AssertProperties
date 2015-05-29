@@ -2,9 +2,9 @@
 
 namespace AssertProperties
 {
-    public class AssertExpcetion : ApplicationException
+    public class AssertException : ApplicationException
     {
-        public AssertExpcetion(string message)
+        public AssertException(string message)
             : base(message)
         {
         }

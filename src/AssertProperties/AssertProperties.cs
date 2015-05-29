@@ -34,6 +34,16 @@ namespace AssertProperties
                 return _parent;
             }
 
+            public AssertProperties<T> ShouldNotBeNull()
+            {
+                if (_value == null)
+                {
+                    _parent.AddError(string.Format("{0} expected NOT to be NULL", _propertName));
+                }
+
+                return _parent;
+            }
+
             public AssertProperties<T> ShouldBe(TResult expectedValue)
             {
                 if (expectedValue == null && _value == null)
@@ -105,7 +115,7 @@ namespace AssertProperties
                 sb.AppendLine(error);
             }
 
-            throw new AssertExpcetion(sb.ToString());
+            throw new AssertException(sb.ToString());
         }
     }
 }
