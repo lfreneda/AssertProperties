@@ -58,6 +58,21 @@ namespace AssertProperties
 
                 return _parent;
             }
+
+            public AssertProperties<T> ShouldNotBe(TResult expectedValue)
+            {
+                if (expectedValue == null && _value == null)
+                {
+                    return _parent;
+                }
+
+                if (expectedValue == null || _value == null || expectedValue.Equals(_value))
+                {
+                    _parent.AddError(string.Format("{0} expected NOT to be {1}", _propertName, expectedValue, _value));
+                }
+
+                return _parent;
+            }
         }
 
         private void AddError(string error)

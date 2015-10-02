@@ -42,5 +42,16 @@ namespace AssertProperties.Tests
                     .EnsureThat(f => f.Name).ShouldBe("Freneda")
                 .Assert();
         }
+
+        [Test]
+        [ExpectedException(typeof(AssertException), ExpectedMessage = "\r\nName expected NOT to be Dexter\r\n")]
+        public void ShouldNotBe_GivenNameDexterWhenShouldNotBeDexter_ShouldThrowException()
+        {
+            var foo = new Foo { Name = "Dexter" };
+
+            foo.AssertProperties()
+                    .EnsureThat(f => f.Name).ShouldNotBe("Dexter")
+                .Assert();
+        }
     }
 }
